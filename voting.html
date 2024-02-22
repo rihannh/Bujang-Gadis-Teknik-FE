@@ -10,57 +10,57 @@
 </head>
 
 <body class="bg-background ">
-    <!--* navbar section -->
-    <nav class="w-full bg-transparent absolute top-0 left-0 z-10 flex items-center">
+    <!-- * NAVBAR -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
-            <div class="flex flex-wrap items-center justify-between py-4">
-                <div class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span
-                        class="self-center text-2xl font-semibold whitespace-nowrap text-primary pointer-events-none">F<span
-                            class="text-white">lowbite</span></span>
+            <div class="flex items-center justify-between relative">
+                <div class="flex items-center px-4 py-5">
+                    <a href="#" class="font-semibold text-primary text-3xl block ">BGT</a>
                 </div>
-                <button data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                    aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-primary bg-background md:bg-transparent rounded-lg  md:flex-row md:space-x-12 rtl:space-x-reverse md:mt-0 md:border-0 "
-                        id="target-ul">
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white hover:bg-secondary rounded md:bg-transparent md:text-primary md:hover:bg-transparent md:p-0 "
-                                aria-current="page">Beranda</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white rounded hover:bg-secondary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0">Sejarah</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white rounded hover:bg-secondary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0">Voting</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white rounded hover:bg-secondary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0">Ranking</a>
-                        </li>
-                    </ul>
+                <div class="flex items-center px-4">
+                    <button id="mobile-nav" class="block absolute right-4 md:hidden" onclick="mobileNavButton()">
+                        <span class="mobile-nav-button origin-top-left hidden"></span>
+                        <span class="mobile-nav-button hidden"></span>
+                        <span class="mobile-nav-button origin-bottom-left hidden"></span>
+                    </button>
+                    <nav id="nav-menu"
+                        class="hidden md:block md:static md:bg-transparent max-w-full md:shadow-none md:rounded-none absolute py-5 shadow-lg rounded-lg  w-full top-full left-0 bg-secondary border border-gray-500 text-white md:border-none">
+                        <ul class="block md:flex gap-x-8 lg:gap-x-16">
+                            <li class="group"><a href="#"
+                                    class="flex text-base font-medium py-2 px-8 md:px-0 group-hover:text-primary">Beranda</a>
+                            </li>
+                            <li class="group"><a href="#text"
+                                    class="flex text-base font-medium py-2 px-8 md:px-0 group-hover:text-primary">Sejarah</a>
+                            </li>
+                            <li class="group"><a href="voting.html"
+                                    class="flex text-base font-medium py-2 px-8 md:px-0 group-hover:text-primary">Voting</a>
+                            </li>
+                            <li class="group"><a href="#review"
+                                    class="flex text-base font-medium py-2 px-8 md:px-0 group-hover:text-primary">Ranking</a>
+                            </li>
+                            <li class="group">
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#"
+                        class="flex text-md text-secondary w-full py-2 px-4  rounded-lg bg-primary  hover:bg-[#c38c11] mr-14 md:mr-0 duration-300">Get
+                        Started</a>
                 </div>
             </div>
         </div>
+    </header>
+    <!-- * NAVBAR END -->
 
-    </nav>
-    <!--* navbar section end  -->
-
+    <!-- * Bujang's List SECTION -->
     <section class="pt-24">
         <div class="container">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-5 lg:gap-0 [&>div:hover]:cursor-pointer">
-                <div class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
+            <h1 class="linear font-extrabold text-3xl lg:text-4xl text-center">VOTING</h1>
+            <h2 class="linear font-extrabold text-xl lg:text-2xl text-center">BUJANG GADIS TEKNIK
+                UNIVERSITAS
+                SRIWIJAYA</h2>
+            <h3 class="text-white text font-extrabold tracking-wider text-xl text-center mt-6">Finalis Bujang</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 xl:gap-0 [&>div:hover]:cursor-pointer">
+                <div id="openModal" class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
                     <div
                         class="rounded-lg max-h-80 aspect-[4/5] overflow-hidden object-cover relative border-2 border-gray-300 group">
                         <img class="group-hover:scale-[115%] duration-500" src="src/public/media/peserta.jpg" alt="">
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
+                <div id="openModal" class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
                     <div
                         class="rounded-lg max-h-80 aspect-[4/5] overflow-hidden object-cover relative border-2 border-gray-3 group">
                         <img class="group-hover:scale-[115%] duration-500" src="src/public/media/peserta.jpg" alt="">
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
+                <div id="openModal" class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
                     <div
                         class="rounded-lg max-h-80 aspect-[4/5] overflow-hidden object-cover relative border-2 border-gray-3 group">
                         <img class="group-hover:scale-[115%] duration-500" src="src/public/media/peserta.jpg" alt="">
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
+                <div id="openModal" class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
                     <div
                         class="rounded-lg max-h-80 aspect-[4/5] overflow-hidden object-cover relative border-2 border-gray-3 group">
                         <img class="group-hover:scale-[115%] duration-500" src="src/public/media/peserta.jpg" alt="">
@@ -116,10 +116,170 @@
                         </div>
                     </div>
                 </div>
-
-
+                <div id="openModal" class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
+                    <div
+                        class="rounded-lg max-h-80 aspect-[4/5] overflow-hidden object-cover relative border-2 border-gray-3 group">
+                        <img class="group-hover:scale-[115%] duration-500" src="src/public/media/peserta.jpg" alt="">
+                        <div class="absolute inset-0 bg-secondary opacity-30"></div>
+                        <span
+                            class="absolute top-0 right-0 bg-secondary text-white text-2xl font-medium py-3 px-6 rounded-bl-xl z-[2]">
+                            1</span>
+                        <div
+                            class="absolute bottom-0 translate-y-20 w-full text-center text-white bg-[#27274acb] py-4 text-lg font-bold group-hover:translate-y-0 duration-500">
+                            <h6>Rihan Naufaldihanif</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="openModal" class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
+                    <div
+                        class="rounded-lg max-h-80 aspect-[4/5] overflow-hidden object-cover relative border-2 border-gray-3 group">
+                        <img class="group-hover:scale-[115%] duration-500" src="src/public/media/peserta.jpg" alt="">
+                        <div class="absolute inset-0 bg-secondary opacity-30"></div>
+                        <span
+                            class="absolute top-0 right-0 bg-secondary text-white text-2xl font-medium py-3 px-6 rounded-bl-xl z-[2]">
+                            1</span>
+                        <div
+                            class="absolute bottom-0 translate-y-20 w-full text-center text-white bg-[#27274acb] py-4 text-lg font-bold group-hover:translate-y-0 duration-500">
+                            <h6>Rihan Naufaldihanif</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-white text font-extrabold tracking-wider text-xl text-center mt-10">Finalis Gadis</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 xl:gap-0 [&>div:hover]:cursor-pointer">
+                <div id="openModal" class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
+                    <div
+                        class="rounded-lg max-h-80 aspect-[4/5] overflow-hidden object-cover relative border-2 border-gray-300 group">
+                        <img class="group-hover:scale-[115%] duration-500" src="src/public/media/peserta.jpg" alt="">
+                        <div class="absolute inset-0 bg-secondary opacity-30"></div>
+                        <span
+                            class="absolute top-0 right-0 bg-secondary text-white text-2xl font-medium py-3 px-6 rounded-bl-xl z-[2]">
+                            1</span>
+                        <div
+                            class="absolute bottom-0 translate-y-20 w-full text-center text-white bg-[#27274acb] py-4 text-lg font-bold group-hover:translate-y-0 duration-500">
+                            <h6>Rihan Naufaldihanif</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="openModal" class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
+                    <div
+                        class="rounded-lg max-h-80 aspect-[4/5] overflow-hidden object-cover relative border-2 border-gray-3 group">
+                        <img class="group-hover:scale-[115%] duration-500" src="src/public/media/peserta.jpg" alt="">
+                        <div class="absolute inset-0 bg-secondary opacity-30"></div>
+                        <span
+                            class="absolute top-0 right-0 bg-secondary text-white text-2xl font-medium py-3 px-6 rounded-bl-xl z-[2]">
+                            1</span>
+                        <div
+                            class="absolute bottom-0 translate-y-20 w-full text-center text-white bg-[#27274acb] py-4 text-lg font-bold group-hover:translate-y-0 duration-500">
+                            <h6>Rihan Naufaldihanif</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="openModal" class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
+                    <div
+                        class="rounded-lg max-h-80 aspect-[4/5] overflow-hidden object-cover relative border-2 border-gray-3 group">
+                        <img class="group-hover:scale-[115%] duration-500" src="src/public/media/peserta.jpg" alt="">
+                        <div class="absolute inset-0 bg-secondary opacity-30"></div>
+                        <span
+                            class="absolute top-0 right-0 bg-secondary text-white text-2xl font-medium py-3 px-6 rounded-bl-xl z-[2]">
+                            1</span>
+                        <div
+                            class="absolute bottom-0 translate-y-20 w-full text-center text-white bg-[#27274acb] py-4 text-lg font-bold group-hover:translate-y-0 duration-500">
+                            <h6>Rihan Naufaldihanif</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="openModal" class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
+                    <div
+                        class="rounded-lg max-h-80 aspect-[4/5] overflow-hidden object-cover relative border-2 border-gray-3 group">
+                        <img class="group-hover:scale-[115%] duration-500" src="src/public/media/peserta.jpg" alt="">
+                        <div class="absolute inset-0 bg-secondary opacity-30"></div>
+                        <span
+                            class="absolute top-0 right-0 bg-secondary text-white text-2xl font-medium py-3 px-6 rounded-bl-xl z-[2]">
+                            1</span>
+                        <div
+                            class="absolute bottom-0 translate-y-20 w-full text-center text-white bg-[#27274acb] py-4 text-lg font-bold group-hover:translate-y-0 duration-500">
+                            <h6>Rihan Naufaldihanif</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="openModal" class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
+                    <div
+                        class="rounded-lg max-h-80 aspect-[4/5] overflow-hidden object-cover relative border-2 border-gray-3 group">
+                        <img class="group-hover:scale-[115%] duration-500" src="src/public/media/peserta.jpg" alt="">
+                        <div class="absolute inset-0 bg-secondary opacity-30"></div>
+                        <span
+                            class="absolute top-0 right-0 bg-secondary text-white text-2xl font-medium py-3 px-6 rounded-bl-xl z-[2]">
+                            1</span>
+                        <div
+                            class="absolute bottom-0 translate-y-20 w-full text-center text-white bg-[#27274acb] py-4 text-lg font-bold group-hover:translate-y-0 duration-500">
+                            <h6>Rihan Naufaldihanif</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="openModal" class="flex flex-col justify-center items-center py-8" data-aos="zoom-in-up">
+                    <div
+                        class="rounded-lg max-h-80 aspect-[4/5] overflow-hidden object-cover relative border-2 border-gray-3 group">
+                        <img class="group-hover:scale-[115%] duration-500" src="src/public/media/peserta.jpg" alt="">
+                        <div class="absolute inset-0 bg-secondary opacity-30"></div>
+                        <span
+                            class="absolute top-0 right-0 bg-secondary text-white text-2xl font-medium py-3 px-6 rounded-bl-xl z-[2]">
+                            1</span>
+                        <div
+                            class="absolute bottom-0 translate-y-20 w-full text-center text-white bg-[#27274acb] py-4 text-lg font-bold group-hover:translate-y-0 duration-500">
+                            <h6>Rihan Naufaldihanif</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Modal -->
+                <div id="myModal" class="modal hidden fixed inset-0 overflow-y-auto z-50">
+                    <div
+                        class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                        <!-- Overlay/background -->
+                        <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                            <div class="absolute inset-0 bg-black opacity-50 "></div>
+                        </div>
+                        <!-- Modal content -->
+                        <span class="hidden sm:inline-block align-middle h-screen" aria-hidden="true">&#8203;</span>
+                        <form action=""
+                            class="inline-block bg-secondary rounded-lg text-left overflow-hidden shadow-xl transform transition-all align-middle max-w-2xl ">
+                            <div class="flex flex-col md:flex-row relative">
+                                <div
+                                    class="md:w-1/3 h-72 flex items-center justify-center overflow-hidden object-cover">
+                                    <img src="src/public/media/peserta.jpg" alt="">
+                                </div>
+                                <div class="flex flex-col items-start py-6 md:pt-16 md:pb-0 px-4">
+                                    <h3 class="text-primary items-center text-2xl font-bold text-center pb-4">Masukan
+                                        Token</h3>
+                                    <div class="flex flex-col mb-3">
+                                        <label for="token" class="text-gray-300 font-light text-sm mb-1 ml-1 ">
+                                            Token</label>
+                                        <input type="text" id="token" name="token"
+                                            class="rounded-lg border-2 border-gray-600 px-4 py-2 mb-2 bg-gray-600 focus:ring-primary focus:border-primary text-white">
+                                    </div>
+                                    <button
+                                        class="px-6 py-2 text-md font-medium text-secondary bg-primary rounded-lg  hover:bg-[#c38c11] duration-300  ">Submit</button>
+                                </div>
+                                <button class="absolute right-0 group rounded-bl-md bg-primary" id="closeModal">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="ionicon h-10 group-hover:scale-75 duration-300" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="32"
+                                            d="M368 368L144 144M368 144L144 368" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
     </section>
+    <!-- * Bujang's List SECTION END-->
+
+
+
 
     <!--* footer section -->
     <footer class="bg-background">
