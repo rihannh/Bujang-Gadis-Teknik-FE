@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- *CSS -->
-    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/public/css/output.css">
 
     <!-- * SWIPER JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -15,45 +15,52 @@
     <title>BGT</title>
 
     <!-- * LOGO -->
-    <link rel="icon" href="src/public/media/photo1.jpg">
+    <link rel="icon" href="src/public/media/logo bgt.PNG">
+
+    <!-- * FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 </head>
 
-<body class="bg-background ">
+<body class="">
     <!-- * NAVBAR -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent">
         <div class="container">
-            <div class="flex items-center justify-between relative">
+            <div class="relative flex items-center justify-between">
                 <div class="flex items-center px-4 py-5">
-                    <a href="#" class="font-semibold text-primary text-3xl block ">BGT</a>
+                    <a href="#" class="block text-3xl font-semibold text-gold-500 ">BGT</a>
                 </div>
                 <div class="flex items-center px-4">
-                    <button id="mobile-nav" class="block absolute right-4 md:hidden" onclick="mobileNavButton()">
-                        <span class="mobile-nav-button origin-top-left hidden"></span>
-                        <span class="mobile-nav-button hidden"></span>
-                        <span class="mobile-nav-button origin-bottom-left hidden"></span>
+                    <button id="mobile-nav" class="absolute block right-4 md:hidden" onclick="mobileNavButton()">
+                        <span class="hidden origin-top-left mobile-nav-button"></span>
+                        <span class="hidden mobile-nav-button"></span>
+                        <span class="hidden origin-bottom-left mobile-nav-button"></span>
                     </button>
                     <nav id="nav-menu"
-                        class="hidden md:block md:static md:bg-transparent max-w-full md:shadow-none md:rounded-none absolute py-5 shadow-lg rounded-lg  w-full top-full left-0 bg-secondary border border-gray-500 text-white md:border-none">
+                        class="absolute left-0 hidden w-full max-w-full py-5 text-white border border-gray-500 rounded-lg shadow-lg bg-dark md:block md:static md:bg-transparent md:shadow-none md:rounded-none top-full bg-secondary md:border-none">
                         <ul class="block md:flex gap-x-8 lg:gap-x-16">
                             <li class="group"><a href="#"
-                                    class="flex text-base font-medium py-2 px-8 md:px-0 group-hover:text-primary">Beranda</a>
+                                    class="flex px-8 py-2 text-base font-medium md:px-0 group-hover:text-gold-500">Beranda</a>
                             </li>
                             <li class="group"><a href="#text"
-                                    class="flex text-base font-medium py-2 px-8 md:px-0 group-hover:text-primary">Sejarah</a>
+                                    class="flex px-8 py-2 text-base font-medium md:px-0 group-hover:text-gold-500">Sejarah</a>
                             </li>
-                            <li class="group"><a href="voting.html"
-                                    class="flex text-base font-medium py-2 px-8 md:px-0 group-hover:text-primary">Voting</a>
+                            <li class="group"><a href="src/public/pages/voting.html"
+                                    class="flex px-8 py-2 text-base font-medium md:px-0 group-hover:text-gold-500">Voting</a>
                             </li>
                             <li class="group"><a href="#review"
-                                    class="flex text-base font-medium py-2 px-8 md:px-0 group-hover:text-primary">Ranking</a>
+                                    class="flex px-8 py-2 text-base font-medium md:px-0 group-hover:text-gold-500">Ranking</a>
                             </li>
                             <li class="group">
                             </li>
                         </ul>
                     </nav>
                     <a href="#"
-                        class="flex text-md text-secondary w-full py-2 px-4  rounded-lg bg-primary  hover:bg-[#c38c11] mr-14 md:mr-0 duration-300">Get
+                        class="flex w-full px-4 text-white py-2 duration-300 rounded-lg text-md text-secondary bg-gold-500 hover:bg-gold-600 mr-14 md:mr-0">Get
                         Started</a>
                 </div>
             </div>
@@ -63,331 +70,244 @@
 
     <!--* hero section -->
     <section id="hero"
-        class="relative bg-center bg-no-repeat bg-jumbotron bg-cover bg-gray-700 bg-blend-multiply h-[80vh] md:h-auto">
-        <div class="container">
-            <div class="px-4 mx-auto my-auto max-w-screen-sm text-center py-52">
-                <h1 class="font-bold text-primary md:text-4xl text-3xl">Pemilihan Bujang Gadis Teknik Universitas
-                    Sriwijaya
-                    2022</h1>
-                <h6 class="text-base md:text-lg text-white pt-3 pb-6">Ayo segera daftarkan diri anda menjadi
-                    anggota
-                    baru
-                    bujang
-                    gadis
-                    teknik
-                </h6>
-                <div class="space-x-4">
-                    <a href="#"
-                        class="text-secondary bg-primary text-base font-semibold rounded-lg md:px-8 md:py-3 px-5 py-2 hover:bg-transparent border-2 border-primary hover:text-primary duration-300 ">Tentang</a>
-                    <a href="#"
-                        class="text-primary bg-transparent border-2 border-primary  hover:bg-primary hover:text-secondary duration-300 text-base font-semibold rounded-lg md:px-8 md:py-3 px-5 py-2">Daftar</a>
-
-                </div>
+        class="flex items-center justify-center bg-center bg-no-repeat bg-jumbotron bg-cover bg-gray-700 bg-blend-multiply h-[90vh] md:h-90vh">
+        <div class="max-w-screen-sm px-4 text-center py-52">
+            <h1 class="text-3xl font-bold tracking-wider font-unique text-gold-500 md:text-4xl">Pemilihan Bujang
+                Gadis Teknik
+                Universitas
+                Sriwijaya
+                2024</h1>
+            <h6 class="pt-3 pb-6 text-base text-white md:text-lg">Ayo segera daftarkan diri anda menjadi
+                anggota
+                baru
+                bujang
+                gadis
+                teknik
+            </h6>
+            <div class="space-x-4">
+                <a href="#"
+                    class="px-5 py-2 text-base font-semibold text-white duration-300 border-2 rounded-lg bg-gold-500 md:px-8 md:py-3 hover:bg-gold-600 border-gold-500 hover:border-gold-600 ">Tentang</a>
+                <a href="#"
+                    class="px-5 py-2 text-base font-semibold text-white duration-300 bg-transparent border-2 border-white rounded-lg hover:bg-gold-600 hover:text-white hover:border-gold-600 hover:text-secondary md:px-8 md:py-3">Daftar</a>
             </div>
-
-            <div
-                class="absolute right-1/2 translate-x-1/2 bottom-0 translate-y-1/2 mx-auto text-white px-6 py-4 md:px-10 md:py-6 bg-secondary rounded-md">
-                <div class="flex space-x-5 md:space-x-10">
-                    <div class="text-center">
-                        <h3 class="font-extrabold text-3xl md:text-4xl text-primary">15</h3>
-                        <h4>Days</h4>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="font-extrabold text-3xl md:text-4xl">:</h3>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="font-extrabold text-3xl md:text-4xl text-primary">15</h3>
-                        <h4>Days</h4>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="font-extrabold text-3xl md:text-4xl">:</h3>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="font-extrabold text-3xl md:text-4xl text-primary">15</h3>
-                        <h4>Days</h4>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="font-extrabold text-3xl md:text-4xl">:</h3>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="font-extrabold text-3xl md:text-4xl text-primary">15</h3>
-                        <h4>Days</h4>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
     </section>
     <!--* hero section end  -->
 
-    <!--* gallery  -->
-    <section class="pt-24 pb-24" id="gallery">
-        <h1 class="linear font-extrabold text-3xl lg:text-4xl text-center mb-12">GALLERY</h1>
-        <div class="swiper w-full">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide relative max-w-[300px] md:max-w-md lg:max-w-xl aspect-video rounded-lg">
-                    <img src="src/public/media/photo1.jpg" alt=""
-                        class="block w-full h-full object-cover select-none rounded-lg">
-                </div>
-                <div class="swiper-slide relative max-w-[300px] md:max-w-md lg:max-w-xl aspect-video rounded-lg">
-                    <img src="src/public/media/photo2.jpg" alt=""
-                        class="block w-full h-full object-cover select-none rounded-lg">
-                </div>
-                <div class="swiper-slide relative max-w-[300px] md:max-w-md lg:max-w-xl aspect-video rounded-lg">
-                    <img src="src/public/media/photo3.jpg" alt=""
-                        class="block w-full h-full object-cover select-none rounded-lg">
-                </div>
-                <div class="swiper-slide relative max-w-[300px] md:max-w-md lg:max-w-xl aspect-video rounded-lg">
-                    <img src="src/public/media/Killers of the Flower Moon.jpg" alt=""
-                        class="block w-full h-full object-cover select-none rounded-lg">
-                </div>
-                <div class="swiper-slide relative max-w-[300px] md:max-w-md lg:max-w-xl aspect-video rounded-lg">
-                    <img src="src/public/media/Five Nights at Freddy_s.webp" alt=""
-                        class="block w-full h-full object-cover select-none rounded-lg">
-                </div>
-                <div class="swiper-slide relative max-w-[300px] md:max-w-md lg:max-w-xl aspect-video rounded-lg">
-                    <img src="src/public/media/Marvel.jpeg" alt=""
-                        class="block w-full h-full object-cover select-none rounded-lg">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--* gallery end-->
-
-    <!--* timeline -->
-    <section class="bg-secondary pt-14 pb-24" id="timeline">
+    <!--* Intro 1 -->
+    <section id="firtIntro" class="pt-32 pb-24">
         <div class="container">
-            <h1 class="linear font-extrabold text-3xl lg:text-4xl text-center mb-12">TIMELINE</h1>
-            <div
-                class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
-
-                <!-- Timeline Item -->
-                <div
-                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                    <!-- Icon -->
-                    <div
-                        class="flex items-center justify-center w-10 h-10 rounded-full border border-background bg-primary text-white shadow-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                        <ion-icon name="calendar-outline"></ion-icon>
-                    </div>
-                    <!-- Card -->
-                    <div
-                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-background p-4 rounded border border-slate-700 shadow">
-                        <div class="font-bold text-white">Order Placed</div>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-500">Released
-                            on December 7th,
-                            2021</time>
-                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+
-                            pages including a dashboard layout, charts, kanban board.</p>
-                        <a href="#"
-                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-secondary bg-primary rounded-lg hover:bg-transparent border-2 border-primary hover:text-primary duration-300  "><svg
-                                class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
-                                <path
-                                    d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
-                            </svg> Download ZIP</a>
-                    </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="flex flex-col items-start justify-center lg:pr-12 space-y-6 pb-14 lg:pb-0">
+                    <h3 class="text-4xl lg:text-5xl font-semibold">Bersiaplah untuk Melangkah <span
+                            class="text-gold-500">Lebih
+                            Jauh</span> </h3>
+                    <p class="text-base lg:text-lg">Inilah kesempatan Anda untuk menjadi pelopor perubahan, untuk
+                        mengukir jejak baru
+                        dalam
+                        perjalanan Anda di Teknik UNSRI. Tidak perlu ragu, kami memahami kekhawatiran Anda. Di tahun
+                        ini, kami membuka pintu untuk Anda menjadi bagian dari Bujang Gadis Teknik UNSRI, dan bukan
+                        hanya itu, Anda juga berhak mendaftar untuk posisi HMJ yang Anda idamkan!</p>
+                    <a href="#"
+                        class="px-12 py-3 text-base font-semibold text-white duration-300 border-2 rounded-lg bg-gold-500 hover:bg-gold-600 border-gold-500 hover:border-gold-600 ">
+                        Join Us
+                    </a>
                 </div>
-                <!-- Timeline Item -->
-                <div
-                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                    <!-- Icon -->
-                    <div
-                        class="flex items-center justify-center w-10 h-10 rounded-full border border-background bg-primary text-white shadow-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                        <ion-icon name="calendar-outline"></ion-icon>
+                <div class="flex flex-col items-start justify-center md:justify-center px-6  md:px-12 space-y-12 ">
+                    <div class="flex items-center space-x-5">
+                        <div class="text-4xl text-gold-500">
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="">
+                            <h4 class="text-lg font-semibold">7 Maret</h4>
+                            <p class="text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Quibusdam
+                                consequatur aliquam
+                                impedit fugit</p>
+                        </div>
                     </div>
-                    <!-- Card -->
-                    <div
-                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-background p-4 rounded border border-slate-700 shadow">
-                        <div class="font-bold text-white">Order Placed</div>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-500">Released
-                            on December 7th,
-                            2021</time>
-                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+
-                            pages including a dashboard layout, charts, kanban board.</p>
+                    <div class="flex items-center space-x-5">
+                        <div class="text-4xl text-gold-500">
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="">
+                            <h4 class="text-lg font-semibold">7 Maret</h4>
+                            <p class="text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Quibusdam
+                                consequatur aliquam
+                                impedit fugit</p>
+                        </div>
                     </div>
-                </div>
-                <!-- Timeline Item -->
-                <div
-                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                    <!-- Icon -->
-                    <div
-                        class="flex items-center justify-center w-10 h-10 rounded-full border border-background bg-primary text-white shadow-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                        <ion-icon name="calendar-outline"></ion-icon>
-                    </div>
-                    <!-- Card -->
-                    <div
-                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-background p-4 rounded border border-slate-700 shadow">
-                        <div class="font-bold text-white">Order Placed</div>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-500">Released
-                            on December 7th,
-                            2021</time>
-                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+
-                            pages including a dashboard layout, charts, kanban board.</p>
-                    </div>
-                </div>
-                <!-- Timeline Item -->
-                <div
-                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                    <!-- Icon -->
-                    <div
-                        class="flex items-center justify-center w-10 h-10 rounded-full border border-background bg-primary text-white shadow-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                        <ion-icon name="calendar-outline"></ion-icon>
-                    </div>
-                    <!-- Card -->
-                    <div
-                        class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-background p-4 rounded border border-slate-700 shadow">
-                        <div class="font-bold text-white">Order Placed</div>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-500">Released
-                            on December 7th,
-                            2021</time>
-                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+
-                            pages including a dashboard layout, charts, kanban board.</p>
+                    <div class="flex items-center space-x-5">
+                        <div class="text-4xl text-gold-500">
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <div class="">
+                            <h4 class="text-lg font-semibold">7 Maret</h4>
+                            <p class="text-sm lg:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Quibusdam
+                                consequatur aliquam
+                                impedit fugit</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
-    <!--* timeline end-->
+    <!--* intro 1 end-->
+
+    <!--* Intro 2 -->
+    <section id="SecondIntro" class="pb-32 pt-12">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="relative h-64 lg:h-auto">
+                    <img class="absolute left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-0 -top-12 h-64 w-auto rounded-lg"
+                        src="src/public/media/photo of BGT 3.png" alt="">
+                    <img class="hidden lg:block absolute right-0 -bottom-8 h-64 w-auto rounded-lg"
+                        src="src/public/media/photo of BGT 5.png" alt="">
+                </div>
+                <div class="flex flex-col items-start justify-center lg:pl-12 space-y-6">
+                    <h3 class="text-3xl md:text-5xl font-semibold">Bersiaplah untuk Melangkah <span
+                            class="text-gold-500">Lebih
+                            Jauh</span> </h3>
+                    <div class="flex flex-col items-start justify-start space-y-8 ">
+                        <div class="flex items-center space-x-5">
+                            <div class="text-4xl text-gold-500">
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <div class="">
+                                <h4 class="text-lg font-semibold">Pengalaman terbaik</h4>
+                                <p class="text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+                                    consequatur aliquam
+                                    impedit fugit</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-5">
+                            <div class="text-4xl text-gold-500">
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <div class="">
+                                <h4 class="text-lg font-semibold">Pengalaman terbaik</h4>
+                                <p class="text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+                                    consequatur aliquam
+                                    impedit fugit</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#"
+                        class="px-5 py-2 text-base font-semibold text-white duration-300 border-2 rounded-lg bg-gold-500 md:px-12 md:py-3 hover:bg-gold-600 border-gold-500 hover:border-gold-600 ">
+                        Join Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* intro 2 end-->
 
     <!--* Requirement section -->
     <section class="pt-14 pb-14" id="requirement">
-        <div class="container">
-            <h1 class="linear font-extrabold text-3xl lg:text-4xl text-center mb-12">SYARAT DAN KETENTUAN</h1>
-            <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-10">
-                <li>
-                    <h3 class="text-primary font-bold text-xl pl-5">Persyaratan1</h3>
-                    <ol class="text-gray-400 text-base ps-5 mt-2 space-y-1 list-decimal list-inside">
-                        <li>Mahasiswa/i aktif UIN Raden Fatah Palembang</li>
-                        <li>Usia Maksimal 23 tahun dan belum menikah</li>
-                        <li>Tinggi badan minimal 160 cm untuk Bujang dan 155 cm untuk Gadis</li>
-                    </ol>
-                </li>
-                <li>
-                    <h3 class="text-primary font-bold text-xl pl-5">Persyaratan2</h3>
-                    <ol class="text-gray-400 text-base ps-5 mt-2 space-y-1 list-decimal list-inside">
-                        <li>Mahasiswa/i aktif UIN Raden Fatah Palembang</li>
-                        <li>Usia Maksimal 23 tahun dan belum menikah</li>
-                        <li>Tinggi badan minimal 160 cm untuk Bujang dan 155 cm untuk Gadis</li>
-                    </ol>
-                </li>
-                <li class="md:col-span-2">
-                    <h3 class="text-primary font-bold text-xl pl-5">Persyaratan3</h3>
-                    <ol class="text-gray-400 text-base ps-5 mt-2 space-y-1 list-decimal list-inside">
-                        <li>Mahasiswa/i aktif UIN Raden Fatah Palembang</li>
-                        <li>Usia Maksimal 23 tahun dan belum menikah</li>
-                        <li>Tinggi badan minimal 160 cm untuk Bujang dan 155 cm untuk Gadis Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Consequatur in magni id necessitatibus a quidem, explicabo,
-                            nobis molestias ratione perspiciatis ipsa neque nostrum obcaecati. Porro pariatur harum
-                            deleniti laboriosam nihil!</li>
-                    </ol>
-                </li>
-            </ul>
+        <div class="py-20 bg-dark">
+            <div class="container">
+                <h1 class="mb-12 text-3xl font-extrabold text-center text-white lg:text-4xl">SYARAT DAN KETENTUAN</h1>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-10">
+                    <li>
+                        <h3 class="pl-5 text-xl font-bold text-gold-500">Persyaratan2</h3>
+                        <ol class="mt-2 space-y-1 text-base text-gray-400 list-decimal ps-5 ml-4">
+                            <li>Melampirkan formulir pendaftaran</li>
+                            <li>Melampirkan Curriculum Vitae</li>
+                            <li>Melampirkan pas foto berwarna ukuran 3x4 sebanyak 3 lembar</li>
+                            <li>Melampirkan fotokopi Kartu Tanda Mahasiswa (KTM) atau Kartu Tanda
+                                Mahasiswa (KTM) sementara untuk mahasiswa angkatan 2022
+                            </li>
+                            <li>Melampirkan fotokopi Kartu Hasil Studi (KHS)</li>
+                            <li>
+                                Tinggi badan minimal :
+                                <ol class="ml-4 list-disc">
+                                    <li>Bujang : 160 cm</li>
+                                    <li>Gadis : 155 cm</li>
+                                </ol>
+                            </li>
+                            <li>Peserta wajib memiliki spesialisasi dalam bidang tertentu seperti, Public
+                                Speaking, Karya Tulis Ilmiah, Olimpiade, atau dalam cabang Seni dan Olahraga.
+                            </li>
+                            <li>Melampirkan riwayat prestasi, seperti :
+                                <ol class="ml-2">
+                                    <li>1) Prestasi akademik
+                                        <ol class="ml-8 list-disc">
+                                            <li>Memiliki indeks prestasi di atas 3.00</li>
+                                            <li>Melampirkan sertifikat perlombaan di tingkat Nasional, Provinsi, atau
+                                                Kota seperti olimpiade, O2SN, dan sebagainya</li>
+                                        </ol>
+                                    </li>
+                                    <li>2) Prestasi non akademik
+                                        <ol class="ml-8 list-disc">
+                                            <li>Melampirkan sertifikat perlombaan di tingkat Nasional, Provinsi, atau
+                                                Kota baik di bidang seni, olahraga, information technology, dan
+                                                sebagainya</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>Untuk lebih jelas dapat dicek di Instagram @bgtunsri</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3 class="pl-5 text-xl font-bold text-gold-500">Persyaratan1</h3>
+                        <ol class="mt-2 space-y-1 text-base text-gray-400 list-decimal ps-5 ml-4">
+                            <li class="">Calon peserta harus meregistrasikan diri melalui situs web Bujang Gadis Teknik
+                                Unsri atau melalui Stand Pendaftaran yang disediakan di Sekretariat BEM FT
+                                Regional Palembang Fakultas Teknik Universitas Sriwijaya</li>
+                            <li>Bagi Peserta yang melakukan Pendaftaran melalui website, formulir pendaftaran
+                                dapat dipindai dan dikumpulkan bersama persyaratan lainnya pada website dan
+                                wajib mengumpulkan hardfile persyaratan kepada panitia dalam waktu yang
+                                nanti ditentukan saat Technical Meeting</li>
+                            <li>Mengumpulkan formulir pendaftaran beserta dengan dokumen persyaratan dan
+                                administrasi menggunakan :
+                                <ol class="ml-4 list-disc">
+                                    <li>Map buffalo biru (Bujang)</li>
+                                    <li>Map buffalo merah (Gadis)</li>
+                                </ol>
+                            </li>
+                            <li>Peserta yang telah mendaftar diwajibkan mengumpulkan berkas pada :
+                                <ol class="ml-4 list-disc">
+                                    <li>Sekretariat BEM FT Regional Palembang Fakultas Teknik Universitas
+                                        Sriwijaya.</li>
+                                    <li>Waktu : 10.00- 17.00</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
 
 
+            </div>
         </div>
+
     </section>
     <!--* Requirement section end -->
 
-    <!--* FAQ  -->
-    <section class="bg-secondary" id="faq">
-        <div class="container pt-24 pb-24">
-            <h1 class="linear font-extrabold text-3xl lg:text-4xl text-center mb-12">FAQ</h1>
-            <div id="accordion-collapse" data-accordion="collapse">
-                <h2 id="accordion-collapse-heading-1">
-                    <button type="button"
-                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right bg-zinc-900 border border-b-0  rounded-t-xl focus:ring-4 focus:bg-zinc-800 ring-gray-800 border-gray-700 text-slate-300 hover:bg-zinc-800 hover:text-white gap-3"
-                        data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
-                        aria-controls="accordion-collapse-body-1">
-                        <span>What is Flowbite?</span>
-                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 5 5 1 1 5" />
-                        </svg>
-                    </button>
-                </h2>
-                <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
-                    <div class="p-5 border border-b-0 border-gray-700 bg-zinc-900">
-                        <p class="mb-2 text-gray-400">Flowbite is an open-source library of
-                            interactive
-                            components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and
-                            more.
-                        </p>
-                        <p class="text-gray-400">Check out this guide to learn how to <a
-                                href="/docs/getting-started/introduction/" class="text-primary hover:underline">get
-                                started</a> and start
-                            developing
-                            websites even faster with components on top of Tailwind CSS.</p>
+    <!--* CTA  -->
+    <section id="cta" class="pt-28">
+        <div class="container">
+            <div class=" relative overflow-hidden">
+                <!-- <svg width="323" height="392" viewBox="0 0 323 392" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="absolute top-0 -right-28 lg:right-10 h-32">
+                    <path opacity="1"
+                        d="M616.232 259.444C408.086 487.938 154.137 371.156 188.138 177.155C196.212 131.086 270.986 -134.846 316.638 3.1545C343.306 83.7667 -92.862 194.155 28.1383 -96.3441"
+                        stroke="#ffff" stroke-width="13" />
+                </svg> -->
+                <div
+                    class="bg-gold-300 flex flex-col md:flex-row items-center rounded-lg justify-between gap-x-12 md:px-16 px-8 py-8 md:py-16 ">
+                    <div class="text-center md:text-start pb-8">
+                        <h3 class="font-semibold text-4xl md:text-5xl pb-4">Mari Bergabunglah Bersama Kami!</h3>
+                        <p class="md:text-lg max-w-lg">Unlock the world of Apple excellence with IPPLE. Shop now for
+                            quality,
+                            convenience, and innovation! 🍎🛒</p>
                     </div>
-                </div>
-                <h2 id="accordion-collapse-heading-2">
-                    <button type="button"
-                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right bg-zinc-900 focus:bg-zinc-800 border border-b-0  focus:ring-4 ring-gray-800 border-gray-700 text-slate-300 hover:bg-zinc-800 hover:text-white gap-3"
-                        data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
-                        aria-controls="accordion-collapse-body-2">
-                        <span>Is there a Figma file available?</span>
-                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 5 5 1 1 5" />
-                        </svg>
-                    </button>
-                </h2>
-                <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
-                    <div class="p-5 border border-b-0 border-gray-700 bg-zinc-900">
-                        <p class="mb-2 text-gray-400">Flowbite is first conceptualized and designed
-                            using
-                            the
-                            Figma software so everything you see in the library has a design equivalent in our Figma
-                            file.
-                        </p>
-                        <p class="text-gray-400">Check out the <a href="https://flowbite.com/figma/"
-                                class="text-primary hover:underline">Figma design system</a> based
-                            on
-                            the
-                            utility classes from Tailwind CSS and components from Flowbite.</p>
-                    </div>
-                </div>
-                <h2 id="accordion-collapse-heading-3">
-                    <button type="button"
-                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right border bg-zinc-900 focus:bg-zinc-800 focus:ring-4 ring-gray-800 border-gray-700 text-slate-300 hover:bg-zinc-800 hover:text-white gap-3"
-                        data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
-                        aria-controls="accordion-collapse-body-3">
-                        <span>What are the differences between Flowbite and Tailwind UI?</span>
-                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 5 5 1 1 5" />
-                        </svg>
-                    </button>
-                </h2>
-                <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
-                    <div class="p-5 border border-t-0 border-gray-700 bg-zinc-900">
-                        <p class="mb-2 text-gray-400">The main difference is that the core components
-                            from
-                            Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.
-                            Another
-                            difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI
-                            offers
-                            sections of pages.</p>
-                        <p class="mb-2 text-gray-400">However, we actually recommend using both
-                            Flowbite,
-                            Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using
-                            the
-                            best
-                            of two worlds.</p>
-                        <p class="mb-2 text-gray-400">Learn more about these technologies:</p>
-                        <ul class="ps-5  list-disc text-gray-400">
-                            <li><a href="https://flowbite.com/pro/" class="text-primary hover:underline">Flowbite
-                                    Pro</a></li>
-                            <li><a href="https://tailwindui.com/" rel="nofollow"
-                                    class="text-primary hover:underline">Tailwind UI</a></li>
-                        </ul>
-                    </div>
+                    <a href="#"
+                        class="bg-primary font-semibold bg-gold-500 text-white px-12 py-2.5 rounded-md hover:shadow-lg hover:bg-gold-600 transition duration-300 ease-in-out shrink-0 ">Join
+                        Us</a>
                 </div>
             </div>
         </div>
@@ -395,12 +315,12 @@
     <!--* FAQ end -->
 
     <!-- * FOOTER -->
-    <footer id="footer">
-        <div class="bg-background text-gray-500 md:text-lg">
+    <footer id="footer" class="pt-28">
+        <div class="text-gray-500 bg-dark md:text-lg">
             <div class="container">
-                <div class="grid grid-cols-2 space-y-8 lg:space-y-0  lg:grid-cols-7 pt-16 pb-12">
-                    <div class="col-span-2  lg:col-span-3 space-y-4 ">
-                        <h3 class="font-unique text-primary text-3xl block">BGT</h3>
+                <div class="grid grid-cols-2 pt-16 pb-12 space-y-8 lg:space-y-0 lg:grid-cols-7">
+                    <div class="col-span-2 space-y-4 lg:col-span-3 ">
+                        <h3 class="block text-3xl font-unique text-gold-500">IPPLE</h3>
                         <p class="">IPPLE, a prominent distributor of Apple products in Indonesia, specializes in
                             offering a wide range of Apple devices and accessories.
                         </p>
@@ -408,7 +328,7 @@
                     <div class="hidden lg:block"></div>
                     <div class="space-y-4">
                         <h3 class="font-semibold text-white">navigation</h3>
-                        <div class="flex flex-col gap-1 [&>a:hover]:text-primary [&>a:hover]:underline">
+                        <div class="flex flex-col gap-1 [&>a:hover]:text-gold-500 [&>a:hover]:underline">
                             <a href="#">Home</a>
                             <a href="#">Home</a>
                             <a href="#">Home</a>
@@ -417,7 +337,7 @@
                     </div>
                     <div class="space-y-4">
                         <h3 class="font-semibold text-white">navigation</h3>
-                        <div class="flex flex-col gap-1 [&>a:hover]:text-primary [&>a:hover]:underline">
+                        <div class="flex flex-col gap-1 [&>a:hover]:text-gold-500 [&>a:hover]:underline">
                             <a href="#">Home</a>
                             <a href="#">Home</a>
                             <a href="#">Home</a>
@@ -426,7 +346,7 @@
                     </div>
                     <div class="space-y-4">
                         <h3 class="font-semibold text-white">navigation</h3>
-                        <div class="flex flex-col gap-1 [&>a:hover]:text-primary [&>a:hover]:underline">
+                        <div class="flex flex-col gap-1 [&>a:hover]:text-gold-500 [&>a:hover]:underline">
                             <a href="#">Home</a>
                             <a href="#">Home</a>
                             <a href="#">Home</a>
@@ -436,7 +356,7 @@
 
                 </div>
                 <hr class="h-px bg-gray-700 border-0">
-                <p class="text-center py-6 text-base">© 2024 Rihan Naufaldihanif. All Rights Reserved</p>
+                <p class="py-6 text-base text-center">© 2024 Rihan Naufaldihanif. All Rights Reserved</p>
             </div>
         </div>
     </footer>
