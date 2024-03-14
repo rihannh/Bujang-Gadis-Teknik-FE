@@ -21,7 +21,7 @@ window.onscroll = function () {
 }
 
 // ! Profile
-
+const profileButton =  document.getElementById('profile');
 
 // ! Get the modal
 const modal = document.getElementById('myModal');
