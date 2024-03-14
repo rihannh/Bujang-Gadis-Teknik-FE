@@ -1,4 +1,4 @@
-//mobile-nav-button
+// ! mobile-nav-button
 
 const mobileNavButton = document.getElementById('mobile-nav');
 const navMenu = document.getElementById('nav-menu');
@@ -8,7 +8,7 @@ mobileNavButton.addEventListener('click', function () {
     navMenu.classList.toggle('hidden');
 });
 
-// navbar 
+// ! navbar 
 window.onscroll = function () {
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
@@ -20,7 +20,10 @@ window.onscroll = function () {
     }
 }
 
-// Get the modal
+// ! Profile
+
+
+// ! Get the modal
 const modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
