@@ -14,7 +14,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'jumbotron': "url('/src/public/media/banner.png')",
+        'jumbotron': "url('/src/public/media/bannerBGT.webp')",
       },
       colors: {
         dark: '#101820',
