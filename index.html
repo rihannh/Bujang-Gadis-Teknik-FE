@@ -11,6 +11,9 @@
     <!-- * SWIPER JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- * AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- *TITTLE -->
     <title>BGT</title>
 
@@ -26,7 +29,7 @@
 
 </head>
 
-<body class="">
+<body class="overflow-x-hidden">
     <!-- * NAVBAR -->
     <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent">
         <div class="container">
@@ -72,12 +75,15 @@
     <section id="hero"
         class="flex items-center justify-center bg-center bg-no-repeat bg-jumbotron bg-cover bg-gray-700 bg-blend-multiply h-[90vh] md:h-90vh">
         <div class="max-w-screen-sm px-4 text-center py-52">
-            <h1 class="text-3xl font-bold tracking-wider font-unique text-gold-500 md:text-4xl">Pemilihan Bujang
+            <h1 class="text-3xl font-bold tracking-wider font-unique text-gold-500 md:text-4xl" data-aos="fade-down">
+                Pemilihan Bujang
                 Gadis Teknik
                 Universitas
                 Sriwijaya
                 2024</h1>
-            <h6 class="pt-3 pb-6 text-base text-white md:text-lg">Ayo segera daftarkan diri anda menjadi
+            <h6 class="pt-3 pb-6 text-base text-white md:text-lg" data-aos="fade-down" data-aos-delay="100">Ayo segera
+                daftarkan diri anda
+                menjadi
                 anggota
                 baru
                 bujang
@@ -85,10 +91,18 @@
                 teknik
             </h6>
             <div class="space-x-4">
-                <a href="#"
-                    class="px-5 py-2 text-base font-semibold text-white duration-300 border-2 rounded-lg bg-gold-500 md:px-8 md:py-3 hover:bg-gold-600 border-gold-500 hover:border-gold-600 ">Tentang</a>
-                <a href="#"
-                    class="px-5 py-2 text-base font-semibold text-white duration-300 bg-transparent border-2 border-white rounded-lg hover:bg-gold-600 hover:text-white hover:border-gold-600 hover:text-secondary md:px-8 md:py-3">Daftar</a>
+                <a href="#">
+                    <button data-aos="zoom-in"
+                        class="px-5 py-2 text-base font-semibold text-white duration-300 border-2 rounded-lg bg-gold-500 md:px-8 md:py-3 hover:bg-gold-600 border-gold-500 hover:border-gold-600 ">
+                        Tentang
+                    </button>
+                </a>
+                <a href="#">
+                    <button data-aos="zoom-in"
+                        class="px-5 py-2 text-base font-semibold text-white duration-300 bg-transparent border-2 border-white rounded-lg hover:bg-gold-600 hover:text-white hover:border-gold-600 hover:text-secondary md:px-8 md:py-3">
+                        Daftar
+                    </button>
+                </a>
             </div>
         </div>
     </section>
@@ -99,22 +113,25 @@
         <div class="container">
             <div class="grid grid-cols-1 lg:grid-cols-2">
                 <div class="flex flex-col items-start justify-center lg:pr-12 space-y-6 pb-14 lg:pb-0">
-                    <h3 class="text-4xl lg:text-5xl font-semibold">Bersiaplah untuk Melangkah <span
+                    <h3 class="text-4xl lg:text-5xl font-semibold" data-aos="fade-down">Bersiaplah untuk Melangkah <span
                             class="text-gold-500">Lebih
                             Jauh</span> </h3>
-                    <p class="text-base lg:text-lg">Inilah kesempatan Anda untuk menjadi pelopor perubahan, untuk
+                    <p class="text-base lg:text-lg" data-aos="fade-right">Inilah kesempatan Anda untuk menjadi pelopor
+                        perubahan, untuk
                         mengukir jejak baru
                         dalam
                         perjalanan Anda di Teknik UNSRI. Tidak perlu ragu, kami memahami kekhawatiran Anda. Di tahun
                         ini, kami membuka pintu untuk Anda menjadi bagian dari Bujang Gadis Teknik UNSRI, dan bukan
                         hanya itu, Anda juga berhak mendaftar untuk posisi HMJ yang Anda idamkan!</p>
-                    <a href="#"
-                        class="px-12 py-3 text-base font-semibold text-white duration-300 border-2 rounded-lg bg-gold-500 hover:bg-gold-600 border-gold-500 hover:border-gold-600 ">
-                        Join Us
+                    <a href="#">
+                        <button href="#" data-aos="zoom-in"
+                            class="px-12 py-3 text-base font-semibold text-white duration-300 border-2 rounded-lg bg-gold-500 hover:bg-gold-600 border-gold-500 hover:border-gold-600 ">
+                            Daftar
+                        </button>
                     </a>
                 </div>
                 <div class="flex flex-col items-start justify-center md:justify-center px-6  md:px-12 space-y-12 ">
-                    <div class="flex items-center space-x-5">
+                    <div class="flex items-center space-x-5" data-aos="zoom-in-up">
                         <div
                             class="bg-gray-200 flex justify-center items-center p-3 rounded-full text-4xl text-gold-500">
                             <ion-icon name="reader"></ion-icon>
@@ -125,7 +142,7 @@
                                 www.google.com</p>
                         </div>
                     </div>
-                    <div class="flex items-center space-x-5">
+                    <div class="flex items-center space-x-5" data-aos="zoom-in-up" data-aos-delay="50">
                         <div
                             class="bg-gray-200 flex justify-center items-center p-3 rounded-full text-4xl text-gold-500">
                             <ion-icon name="mic"></ion-icon>
@@ -136,7 +153,7 @@
                                 www.google.com</p>
                         </div>
                     </div>
-                    <div class="flex items-center space-x-5">
+                    <div class="flex items-center space-x-5" data-aos="zoom-in-up" data-aos-delay="100">
                         <div
                             class="bg-gray-200 flex justify-center items-center p-3 rounded-full text-4xl text-gold-500">
                             <ion-icon name="megaphone"></ion-icon>
@@ -157,16 +174,17 @@
     <section id="secondIntro" class="py-32">
         <div class="container">
             <div class="grid grid-cols-1 lg:grid-cols-2">
-                <a href="./src/public/pages/register.html" class="relative h-64 lg:h-auto">
+                <div class="relative h-64 lg:h-auto">
                     <img class="absolute left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-0 -top-6 md:-top-12 lg:-top-0 xl:-top-8 h-48 md:h-64 lg:h-56 xl:h-64 w-auto rounded-lg hover:scale-105 hover:rotate-3 duration-500 cursor-pointer"
-                        src="src/public/media/photo of BGT 3.png" alt="">
+                        src="src/public/media/photo of BGT 3.png" alt="" data-aos="flip-left">
                     <img class="hidden lg:block absolute right-0 bottom-20 xl:-bottom-12 h-48 md:h-64 lg:h-56 xl:h-64 w-auto rounded-lg hover:scale-105 hover:-rotate-3 duration-500 cursor-pointer"
-                        src="src/public/media/photo of BGT 5.png" alt="">
-                </a>
+                        src="src/public/media/photo of BGT 5.png" alt="" data-aos="flip-right" data-aos-delay="50">
+                </div>
                 <div class="flex flex-col items-start justify-center lg:pl-12 space-y-6">
-                    <h3 class="text-3xl md:text-5xl font-semibold">Mengenal <span class="text-gold-500">IBGT</span>
+                    <h3 class="text-3xl md:text-5xl font-semibold" data-aos="fade-down">Mengenal <span
+                            class="text-gold-500">IBGT</span>
                         Universitas Sriwijaya</h3>
-                    <div class="flex flex-col items-start justify-start space-y-8 ">
+                    <div class="flex flex-col items-start justify-start space-y-8" data-aos="fade-left">
                         <p class="lg:text-lg text-justify">
                             Ikatan Bujang Gadis Teknik UNSRI merupakan duta pendidikan di lingkungan Fakultas Teknik
                             Universitas Sriwijaya dari ajang Pemilihan Bujang Gadis Teknik yang terseleksi hingga ke
@@ -175,9 +193,11 @@
                             di Fakultas Teknik Unsri.
                         </p>
                     </div>
-                    <a href="#"
-                        class="px-5 py-2 text-base font-semibold text-white duration-300 border-2 rounded-lg bg-gold-500 md:px-12 md:py-3 hover:bg-gold-600 border-gold-500 hover:border-gold-600 ">
-                        Join Us
+                    <a href="#">
+                        <button data-aos="zoom-in"
+                            class="px-5 py-2 text-base font-semibold text-white duration-300 border-2 rounded-lg bg-gold-500 md:px-12 md:py-3 hover:bg-gold-600 border-gold-500 hover:border-gold-600 ">
+                            Tentukan Pilihanmu
+                        </button>
                     </a>
                 </div>
             </div>
@@ -189,11 +209,12 @@
     <section class="pt-20 pb-14" id="requirement">
         <div class="py-20 bg-dark">
             <div class="container">
-                <h1 class="mb-12 text-3xl font-extrabold text-center text-white lg:text-4xl">SYARAT DAN KETENTUAN</h1>
+                <h1 class="mb-12 text-3xl font-extrabold text-center text-white lg:text-4xl" data-aos="fade-down">SYARAT
+                    DAN KETENTUAN</h1>
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-10">
                     <li>
-                        <h3 class="pl-5 text-xl font-bold text-gold-500">Persyaratan2</h3>
-                        <ol class="mt-2 space-y-1 text-base text-gray-400 list-decimal ps-5 ml-4">
+                        <h3 class="pl-5 text-xl font-bold text-gold-500" data-aos="fade-down">Persyaratan2</h3>
+                        <ol class="mt-2 space-y-1 text-base text-gray-400 list-decimal ps-5 ml-4" data-aos="fade-right">
                             <li>Melampirkan formulir pendaftaran</li>
                             <li>Melampirkan Curriculum Vitae</li>
                             <li>Melampirkan pas foto berwarna ukuran 3x4 sebanyak 3 lembar</li>
@@ -233,8 +254,8 @@
                         </ol>
                     </li>
                     <li>
-                        <h3 class="pl-5 text-xl font-bold text-gold-500">Persyaratan1</h3>
-                        <ol class="mt-2 space-y-1 text-base text-gray-400 list-decimal ps-5 ml-4">
+                        <h3 class="pl-5 text-xl font-bold text-gold-500" data-aos="fade-down">Persyaratan1</h3>
+                        <ol class="mt-2 space-y-1 text-base text-gray-400 list-decimal ps-5 ml-4" data-aos="fade-left">
                             <li class="">Calon peserta harus meregistrasikan diri melalui situs web Bujang Gadis Teknik
                                 Unsri atau melalui Stand Pendaftaran yang disediakan di Sekretariat BEM FT
                                 Regional Palembang Fakultas Teknik Universitas Sriwijaya</li>
@@ -270,23 +291,29 @@
     <!--* CTA  -->
     <section id="cta" class="pt-28">
         <div class="container">
-            <div class=" relative overflow-hidden hover:scale-105 duration-500">
+            <div class=" relative overflow-hidden hover:scale-105 duration-500" data-aos="zoom-in-up">
                 <svg width="323" height="392" viewBox="0 0 323 392" fill="none" xmlns="http://www.w3.org/2000/svg"
                     class="absolute -top-3 -right-28 h-32">
                     <path opacity="1"
                         d="M616.232 259.444C408.086 487.938 154.137 371.156 188.138 177.155C196.212 131.086 270.986 -134.846 316.638 3.1545C343.306 83.7667 -92.862 194.155 28.1383 -96.3441"
-                        stroke="#ffff" stroke-width="13" />
+                        stroke="#ffff" stroke-width="13" data-aos="fade-left" />
                 </svg>
                 <div
                     class="bg-gold-300 flex flex-col md:flex-row items-center rounded-lg justify-between gap-x-12 md:px-16 px-8 py-8 md:py-16 ">
                     <div class="text-center md:text-start pb-8">
-                        <h3 class="font-semibold text-4xl md:text-5xl pb-4">Mari Bergabunglah Bersama Kami!</h3>
-                        <p class="md:text-lg max-w-xl">Daftar sekarang dan buktikan bahwa Anda memiliki kemampuan untuk
+                        <h3 class="font-semibold text-4xl md:text-5xl pb-4" data-aos="fade-down">Mari Bergabunglah
+                            Bersama Kami!</h3>
+                        <p class=" md:text-lg max-w-xl" data-aos="fade-right">Daftar sekarang dan buktikan bahwa Anda
+                            memiliki kemampuan
+                            untuk
                             menjadi bagian dari perubahan <span class="text-3xl">💎</span></p>
                     </div>
-                    <a href="#"
-                        class="bg-primary font-semibold bg-gold-500 text-white px-12 py-2.5 rounded-md hover:shadow-lg hover:bg-gold-500 hover:scale-110  hover:shadow-gold-500 transition duration-300 ease-in-out shrink-0 ">Join
-                        Us</a>
+                    <a href="#">
+                        <button data-aos="fade-left" data-aos-delay="100"
+                            class="bg-primary font-semibold bg-gold-500 text-white px-12 py-2.5 rounded-md hover:shadow-lg hover:bg-gold-500 hover:scale-110  hover:shadow-gold-500 transition duration-300 ease-in-out shrink-0 ">Join
+                            Us
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -351,6 +378,12 @@
 
     <!-- * SCRIPT LOCAL -->
     <script src="src/public/js/script.js"></script>
+
+    <!-- * AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 700 });
+    </script>
 
     <!-- * ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
