@@ -2714,12 +2714,12 @@ video {
   vertical-align: super;
 }
 
-.font-unique {
-  font-family: Aksara;
-}
-
 .font-sans {
   font-family: Poppins, sans-serif;
+}
+
+.font-unique {
+  font-family: Aksara;
 }
 
 .text-2xl {
@@ -2760,11 +2760,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -2861,6 +2856,10 @@ video {
 
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
@@ -3708,6 +3707,11 @@ html {
     text-align: start;
   }
 
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -3726,11 +3730,6 @@ html {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .md\:shadow-none {
