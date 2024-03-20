@@ -10,7 +10,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
-      unique: ["Lily Script One", 'system-ui'],
+      unique: ["Aksara"],
     },
     extend: {
       backgroundImage: {

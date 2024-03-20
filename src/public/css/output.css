@@ -2715,7 +2715,11 @@ video {
 }
 
 .font-unique {
-  font-family: Lily Script One, system-ui;
+  font-family: Aksara;
+}
+
+.font-sans {
+  font-family: Poppins, sans-serif;
 }
 
 .text-2xl {
@@ -2756,6 +2760,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -3276,7 +3285,7 @@ video {
 @font-face {
   font-family: 'Aksara';
 
-  src: url(../font/JAWAPALSU.TTF);
+  src: url(../font/kemasyuran-jawa.ttf);
 }
 
 html {
@@ -3717,6 +3726,11 @@ html {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:shadow-none {
